@@ -1,22 +1,24 @@
 #include <stdio.h>
-
 /**
-* main
-*
-* Return: Always (Success)
+* main - main block
+* Description: print alphabets in lower case
+* and then in upper case.
+* Return: 0
 */
 int main(void)
 {
-char c;
-for (c = 'a'; c <= 'z'; c++)
+char c = 'a';
+while (c <= 'z')
 {
 putchar(c);
+c++;
 }
-for (c = 'A'; c <= 'Z'; c++)
+c = 'A';
+while (c <= 'Z')
 {
 putchar(c);
+c++;
 }
 putchar('\n');
-
 return (0);
 }
